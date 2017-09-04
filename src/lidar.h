@@ -7,7 +7,7 @@
 
 class Lidar {
 private:
-  double std_laspx_, std_laspy_;
+  double std_laspx, std_laspy;
 
 public:
   Lidar(const double std_laspx, const double std_laspy);

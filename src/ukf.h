@@ -22,7 +22,11 @@ private:
   VectorXd x_;
   MatrixXd P_;
   long long time_us_;
+  bool use_lidar_;
+  bool use_radar_;
 
+  void ProcessRadarMeasurement(const MeasurementPackage&);
+  void ProcessLidarMeasurement(const MeasurementPackage&);
   friend int main();
 };
 

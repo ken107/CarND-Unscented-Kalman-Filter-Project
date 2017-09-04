@@ -7,7 +7,7 @@
 
 class Radar {
 private:
-  double std_radr_, std_radphi_, std_radrd_;
+  double std_radr, std_radphi, std_radrd;
 
 public:
   Radar(const double std_radr, const double std_radphi, const double std_radrd);

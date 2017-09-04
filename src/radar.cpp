@@ -3,7 +3,7 @@
 using Eigen::MatrixXd;
 using Eigen::VectorXd;
 
-Radar::Radar(const double std_radr, const double std_radphi, const double std_radrd) : std_radr_(std_radr), std_radphi_(std_radphi), std_radrd_(std_radrd) {
+Radar::Radar(const double std_radr, const double std_radphi, const double std_radrd) : std_radr(std_radr), std_radphi(std_radphi), std_radrd(std_radrd) {
 }
 
 void Radar::Initialize(const MeasurementPackage& m, VectorXd& x, MatrixXd& P) {
