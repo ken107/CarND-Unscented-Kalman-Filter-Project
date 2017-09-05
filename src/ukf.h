@@ -25,8 +25,6 @@ private:
   bool use_lidar_;
   bool use_radar_;
 
-  void ProcessRadarMeasurement(const MeasurementPackage&);
-  void ProcessLidarMeasurement(const MeasurementPackage&);
   friend int main();
 };
 

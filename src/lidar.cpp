@@ -13,9 +13,9 @@ void Lidar::Initialize(const MeasurementPackage& m, VectorXd& x, MatrixXd& P) {
   //initialize state covariance matrix
 	P << 1, 0, 0, 0, 0,
       0, 1, 0, 0, 0,
-      0, 0, 1000, 0, 0,
-      0, 0, 0, 1000, 0,
-      0, 0, 0, 0, 1000;
+      0, 0, 10, 0, 0,
+      0, 0, 0, 10, 0,
+      0, 0, 0, 0, 10;
 }
 
 void Lidar::Update(const MeasurementPackage& m, VectorXd& x, MatrixXd& P) {
